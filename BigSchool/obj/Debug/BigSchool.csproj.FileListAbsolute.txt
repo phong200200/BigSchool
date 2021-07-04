@@ -111,3 +111,4 @@ E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.GenerateResource.cache
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.CreateTableCourse.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.InsertDataOnTableCategory.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.UpdateCourse.resources
+E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddNameColumnToApplicationUser.resources

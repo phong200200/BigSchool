@@ -1,16 +1,29 @@
-﻿using System;
+﻿using BigSchool.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using System.Web.Mvc;
 
 namespace BigSchool.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext _dbContext;
+
+        public HomeController()
+        {
+            _dbContext = new ApplicationDbContext();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var upcommingCourse = _dbContext.Courses
+                .Include(a => a.Lecture)
+                .Include(a => a.Category)
+                .Where(a => a.dateTime > DateTime.Now);
+            return View(upcommingCourse);
         }
 
         public ActionResult About()
