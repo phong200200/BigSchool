@@ -1,10 +1,11 @@
 ﻿using BigSchool.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
+using System.Linq;
 using System.Data.Entity;
 using System.Web.Mvc;
+using BigSchool.ViewModel;
 
 namespace BigSchool.Controllers
 {
@@ -16,14 +17,19 @@ namespace BigSchool.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-
         public ActionResult Index()
         {
             var upcommingCourse = _dbContext.Courses
                 .Include(a => a.Lecture)
                 .Include(a => a.Category)
                 .Where(a => a.dateTime > DateTime.Now);
-            return View(upcommingCourse);
+
+            var viewModel = new CoursesViewModel
+            {
+                UpcommingCourses = upcommingCourse,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View(viewModel);
         }
 
         public ActionResult About()

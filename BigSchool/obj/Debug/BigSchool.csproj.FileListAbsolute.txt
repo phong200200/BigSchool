@@ -101,7 +101,6 @@ E:\CSharp\BigSchool\BigSchool\bin\Microsoft.Owin.Security.Twitter.xml
 E:\CSharp\BigSchool\BigSchool\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\CSharp\BigSchool\BigSchool\bin\Microsoft.Owin.Security.OAuth.xml
 E:\CSharp\BigSchool\BigSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CoreCompileInputs.cache
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CopyComplete
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.dll
@@ -112,3 +111,12 @@ E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.CreateTableCourse.r
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.InsertDataOnTableCategory.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.UpdateCourse.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddNameColumnToApplicationUser.resources
+E:\CSharp\BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
+E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.dll
+E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
+E:\CSharp\BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
+E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.xml
+E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
+E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.somethingNew.resources
+E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
+E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
