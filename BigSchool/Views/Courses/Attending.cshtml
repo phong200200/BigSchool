@@ -20,18 +20,18 @@
                 </div>
             </div>
             <div class="details">
-                <span class="lecture">
-                    @course.Lecture.name
+                    <span class="lecture">
+                        @course.Lecture.name
 
-                    @if (course.IsCanceled)
-                {
-                    <span class="label label-warning" > Canceled</span>
-                }
-                    @if (Model.ShowAction && !course.IsCanceled)
+                        @if (course.IsCanceled)
                     {
-                        <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@course.LectureId">Follow?</button>
+                        <span class="label label-warning" > Canceled</span>
                     }
-                </span>
+                        @if (Model.ShowAction && !course.IsCanceled)
+                        {
+                            <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@course.LectureId">Follow?</button>
+                        }
+                    </span>
                 <span class="category">
                     @course.Category.Name
                 </span>

@@ -107,16 +107,11 @@ E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.dll
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.pdb
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.InitMigration.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.GenerateResource.cache
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.CreateTableCourse.resources
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.InsertDataOnTableCategory.resources
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.UpdateCourse.resources
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddNameColumnToApplicationUser.resources
 E:\CSharp\BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
 E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.dll
 E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
 E:\CSharp\BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
 E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.xml
 E:\CSharp\BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.somethingNew.resources
 E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
-E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
+E:\CSharp\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.somethingNewAndCancel.resources

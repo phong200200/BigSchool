@@ -54,8 +54,30 @@ namespace BigSchool.Controllers
             };
             _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Mine", "Courses");
         }
+
+        //[Authorize]
+        //public ActionResult Following()
+        //{
+        //    var _followerId = User.Identity.GetUserId();
+        //    var _followee = _dbContext.Followings
+        //        .Where(a => a.FollowerId == _followerId)
+        //        .Select(a => a.FolloweeId)
+        //        //.Include()
+        //        .ToList();
+
+        //    //bool isFollow = _dbContext.Followings.Any(a => a.??);
+
+
+        //    var viewModel = new FollowViewModel
+        //    {
+        //        Followings = _followee,
+        //        //showFollow = isFollow,
+        //        showAction = User.Identity.IsAuthenticated
+        //    };
+        //    return View(viewModel);
+        //}
 
         [Authorize]
         public ActionResult Attending()
@@ -67,6 +89,9 @@ namespace BigSchool.Controllers
                 .Include(l => l.Lecture)
                 .Include(l => l.Category)
                 .ToList();
+
+            
+
             var viewModel = new CoursesViewModel
             {
                 UpcommingCourses = courses,

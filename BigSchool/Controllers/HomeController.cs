@@ -6,6 +6,7 @@ using System.Linq;
 using System.Data.Entity;
 using System.Web.Mvc;
 using BigSchool.ViewModel;
+using Microsoft.AspNet.Identity;
 
 namespace BigSchool.Controllers
 {
@@ -24,6 +25,8 @@ namespace BigSchool.Controllers
                 .Include(a => a.Category)
                 .Where(a => a.dateTime > DateTime.Now);
 
+            //var userid = _dbContext.Users.Find(User.Identity.GetUserId());
+            //bool isGoing = _dbContext.Attendances.Any(a => a.CourseId == )
             var viewModel = new CoursesViewModel
             {
                 UpcommingCourses = upcommingCourse,

@@ -193,29 +193,9 @@
     <Compile Include="Migrations\202106300607150_Init-Migration.Designer.cs">
       <DependentUpon>202106300607150_Init-Migration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106300636427_CreateTableCourse.cs" />
-    <Compile Include="Migrations\202106300636427_CreateTableCourse.Designer.cs">
-      <DependentUpon>202106300636427_CreateTableCourse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106300637215_InsertDataOnTableCategory.cs" />
-    <Compile Include="Migrations\202106300637215_InsertDataOnTableCategory.Designer.cs">
-      <DependentUpon>202106300637215_InsertDataOnTableCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106300831266_Update-Course.cs" />
-    <Compile Include="Migrations\202106300831266_Update-Course.Designer.cs">
-      <DependentUpon>202106300831266_Update-Course.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107041052161_AddNameColumnToApplicationUser.cs" />
-    <Compile Include="Migrations\202107041052161_AddNameColumnToApplicationUser.Designer.cs">
-      <DependentUpon>202107041052161_AddNameColumnToApplicationUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107111432297_somethingNew.cs" />
-    <Compile Include="Migrations\202107111432297_somethingNew.Designer.cs">
-      <DependentUpon>202107111432297_somethingNew.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202107111552378_AddIsCanceledColumnToCourse.cs" />
-    <Compile Include="Migrations\202107111552378_AddIsCanceledColumnToCourse.Designer.cs">
-      <DependentUpon>202107111552378_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    <Compile Include="Migrations\202107140803504_somethingNewAndCancel.cs" />
+    <Compile Include="Migrations\202107140803504_somethingNewAndCancel.Designer.cs">
+      <DependentUpon>202107140803504_somethingNewAndCancel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -230,6 +210,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModel\CoursesViewModel.cs" />
     <Compile Include="ViewModel\CourseViewModel.cs" />
+    <Compile Include="ViewModel\FollowViewModel.cs" />
     <Compile Include="ViewModel\FutureDate.cs" />
     <Compile Include="ViewModel\ValidTime.cs" />
   </ItemGroup>
@@ -321,23 +302,8 @@
     <EmbeddedResource Include="Migrations\202106300607150_Init-Migration.resx">
       <DependentUpon>202106300607150_Init-Migration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106300636427_CreateTableCourse.resx">
-      <DependentUpon>202106300636427_CreateTableCourse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106300637215_InsertDataOnTableCategory.resx">
-      <DependentUpon>202106300637215_InsertDataOnTableCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106300831266_Update-Course.resx">
-      <DependentUpon>202106300831266_Update-Course.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107041052161_AddNameColumnToApplicationUser.resx">
-      <DependentUpon>202107041052161_AddNameColumnToApplicationUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107111432297_somethingNew.resx">
-      <DependentUpon>202107111432297_somethingNew.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202107111552378_AddIsCanceledColumnToCourse.resx">
-      <DependentUpon>202107111552378_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107140803504_somethingNewAndCancel.resx">
+      <DependentUpon>202107140803504_somethingNewAndCancel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

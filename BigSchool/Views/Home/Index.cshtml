@@ -19,7 +19,11 @@
                 <span class="lecture">
                     @course.Lecture.name
 
-                    @if (Model.ShowAction)
+                    @if (course.IsCanceled)
+                    {
+                        <span class="label label-warning"> Canceled</span>
+                    }
+                    @if (Model.ShowAction && !course.IsCanceled)
                     {
                         <button class="btn btn-default btn-sm js-toggle-follow" data-user-id="@course.LectureId">Follow</button>
                     }
@@ -29,6 +33,7 @@
                 </span>
                 @if (Model.ShowAction)
                 {
+                    
                     <button data-course-id="@course.Id" class="btn btn-default btn-sm js-toggle-attendance">Going???</button>
                 }
 
@@ -42,29 +47,77 @@
         $(document).ready(function () {
             $(".js-toggle-attendance").click(function (e) {
                 var button = $(e.target);
-                $.post("/api/attendances", { courseId: button.attr("data-course-id") })
-                    .done(function () {
-                        button
-                            .removeClass("btn-default")
-                            .addClass("btn-info")
-                            .text("Going");
+                if (button.hasClass("btn-default")) {
+                    $.post("/api/attendances", { courseId: button.attr("data-course-id") })
+                        .done(function () {
+                            button
+                                .removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Going?");
+                        })
+                        .fail(function () {
+                            alert("Something Wrong??");
+                        });
+                } else {
+                    $.ajax({
+                        url: "/api/attendances" + button.attr("data-course-id"), method: "DELETE"
                     })
-                    .fail(function () {
-                        alert("Something Wrong??");
-                    });
+                        .done(function () {
+                            button
+                                .removeClass("btn-info")
+                                .addClass("btn-default")
+                                .text("Going_ing");
+                        })
+                        .fail(function () {
+                            alert("Something lại fail");
+                        });
+                }
+
             });
         });
 
-        $(".js-toggle-follow").click(function (e) {
-            var button = $(e.target);
-            $.post("/api/followings", { followeeId: button.attr("data-user-id") })
-                .done(function () {
-                    button.text("Following");
-                })
-                .fail(function () {
-                    alert("Something fail???");
-                });
+        $(document).ready(function () {
+            $(".js-toggle-follow").click(function (e) {
+                var button = $(e.target);
+                if (button.hasClass("btn-default")) {
+                    $.post("/api/followings", { followeeId: button.attr("data-user-id") })
+                        .done(function () {
+                            button
+                                .removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Follow??");
+                        })
+                        .fail(function () {
+                            alert("Something Wrong?? - followfail");
+                        });
+                } else {
+                    $.ajax({
+                        url: "/api/followings" + button.attr("data-user-id"), method: "DELETE"
+                    })
+                        .done(function () {
+                            button
+                                .removeClass("btn-info")
+                                .addClass("btn-default")
+                                .text("Following");
+                        })
+                        .fail(function () {
+                            alert("Something lại fail - followfail");
+                        });
+                }
+
+            });
         });
+
+        //$(".js-toggle-follow").click(function (e) {
+        //    var button = $(e.target);
+        //    $.post("/api/followings", { followeeId: button.attr("data-user-id") })
+        //        .done(function () {
+        //            button.text("Following");
+        //        })
+        //        .fail(function () {
+        //            alert("Something fail???");
+        //        });
+        //});
     </script>
 }
 
